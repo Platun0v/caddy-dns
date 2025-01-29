@@ -5,9 +5,9 @@ When you want to use [Caddy](https://caddyserver.com/) with DNS challenge for TL
 ## Usage
 
 ```sh
-docker pull jaredlander/caddy-dns:digitalocean-latest
+docker pull platun0v/caddy-dns:digitalocean-latest
 # or
-docker pull jaredlander/caddy-dns:cloudflare-latest
+docker pull platun0v/caddy-dns:cloudflare-latest
 ```
 
 ## Available Providers

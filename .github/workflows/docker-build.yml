@@ -44,7 +44,7 @@ jobs:
           push: true
           build-args: |
             PROVIDER=${{ matrix.provider }}
-          tags: jaredlander/caddy-dns:${{ matrix.provider }}-latest
+          tags: platun0v/caddy-dns:${{ matrix.provider }}-latest
           cache-from: type=registry,ref=user/app:latest
           cache-to: type=inline
   dockerhub-description:
@@ -58,7 +58,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_RWD }}
-          repository: jaredlander/caddy-dns
+          repository: platun0v/caddy-dns
           short-description: Caddy images built with different DNS providers
           readme-filepath: ./README.md
           enable-url-completion: true
